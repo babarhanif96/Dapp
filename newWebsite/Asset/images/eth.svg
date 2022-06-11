@@ -1,0 +1,17 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 304" width="304" height="304">
+	<title>steth-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.s0 { fill: #00a3ff } 
+		.s1 { opacity: .6;fill: #00a3ff } 
+		.s2 { opacity: .2;fill: #00a3ff } 
+	</style>
+	<path id="Layer" class="s0" d="m151.48 297.57c-26.74 0-53.47-10-73.88-29.99c-34.68-33.98-40.57-87.01-14.17-127.51l2.34-3.59c85.71 161.08 85.71 161.08 85.71 161.08z" />
+	<path id="Layer" class="s1" d="m151.48 297.57c0 0 0 0-85.71-161.08l85.71 48.96c0 36.84 0 77.04 0 112.13z" />
+	<path id="Layer" class="s1" d="m237.27 136.49l2.34 3.59c26.4 40.5 20.5 93.53-14.17 127.51c-20.4 19.99-47.14 29.98-73.88 29.99c0 0 0 0 85.71-161.08z" />
+	<path id="Layer" class="s2" d="m151.57 185.44l85.71-48.96c-85.71 161.08-85.71 161.08-85.71 161.08c0-35.08 0-75.28 0-112.13z" />
+	<path id="Layer" class="s2" d="m225.41 118.34l-73.83 42.19v-84.44l73.83 42.25z" />
+	<path id="Layer" class="s1" d="m151.58 160.53l-73.88-42.19l73.88-42.25v84.44z" />
+	<path id="Layer" class="s0" d="m151.58 75.97l-73.88 42.36l73.88-113.28v70.92z" />
+	<path id="Layer" class="s1" d="m151.58 5l73.88 113.34l-73.88-42.37v-70.97z" />
+</svg>

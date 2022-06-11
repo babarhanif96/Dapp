@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H</title>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&family=Poppins&family=Roboto&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+    
+</head>
+
+<body>
+    <section id="home">
+        <header class="head">
+            <nav id="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="Asset/images/logo.png" alt="" width="80" height="80"></a>
+                </div>
+                <div class="nav-items">
+                    <ul id="desktop" class="desktopNav">
+                        <li><a href="">MARKET</a></li>
+                        <li><a href="dashboard.html">MY PAGE</a></li>
+                        <li><a href="lend.html">LEND</a></li>
+                        <li><a href="borrow.html">BORROW</a></li>
+                        <li><a href="deposit.html">DEPOSIT</a></li>
+                    </ul>
+                    <ion-icon onclick="toggleNav()" id="mClosed" class="menu-closed" name="menu-outline"></ion-icon>
+                    <ion-icon onclick="toggleNav()" id="mOpened" class="menu-opened" name="close-outline"></ion-icon>
+                    <ul id="phone" class="mobileNav">
+                        <li><a href="">MARKET</a></li>
+                        <li><a href="dashboard.html">MY PAGE</a></li>
+                        <li><a href="lend.html">LEND</a></li>
+                        <li><a href="borrow.html">BORROW</a></li>
+                        <li><a href="deposit.html">DEPOSIT</a></li>
+                    </ul>
+                </div>
+                <div class="navSocial desktopSocial">
+                    <div class="twitter">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </div>
+                    <div class="github">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                    <div class="discord">
+                        <ion-icon name="logo-discord"></ion-icon>
+                    </div>
+                </div>
+                <div class="mnc">
+                    <div class="connectBtn">
+                        <button id="connect"> Connect </button> 
+                        <button style="display:none;" id="disconnect"> </button> 
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="homeContainer">
+            <div class="totalVal">
+                <h1 class="totalPrice"><span>$</span> 13,800,999.72</h1>
+                <p class="priceText">TOTAL VALUE LOCKED</p>
+            </div>
+        </div>
+        <div class="homeFlexContainer">
+            <div class="flexBox">
+                <div class="currency">
+                    <div class="icon">
+                        <img src="Asset/images/dollar.svg" alt="">
+                    </div>
+                    <div class="currencyText">
+                        <h1>USD Coin</h1>
+                    </div>
+                </div>
+                <div class="currencyTable">
+                    <table class="cT">
+                        <tr>
+                            <td>Total Deposited</td>
+                            <td><span>$</span>1.87M</td>
+                        </tr>
+                        <tr>
+                            <td>Total Borrowed</td>
+                            <td><span>$</span>821.32</td>
+                        </tr>
+                        <tr>
+                            <td>Deposit APY</td>
+                            <td>13.14<span>%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Borrow APY</td>
+                            <td>0<span>%</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="flexBox">
+                <div class="currency">
+                    <div class="icon">
+                        <img src="Asset/images/dai.svg" alt="">
+                    </div>
+                    <div class="currencyText">
+                        <h1>Dai Coin</h1>
+                    </div>
+                </div>
+                <div class="currencyTable">
+                    <table class="cT">
+                        <tr>
+                            <td>Total Deposited</td>
+                            <td><span>$</span>1.87M</td>
+                        </tr>
+                        <tr>
+                            <td>Total Borrowed</td>
+                            <td><span>$</span>821.32</td>
+                        </tr>
+                        <tr>
+                            <td>Deposit APY</td>
+                            <td>13.14<span>%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Borrow APY</td>
+                            <td>0<span>%</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="flexBox">
+                <div class="currency">
+                    <div class="icon">
+                        <img src="Asset/images/usdt.svg" alt="">
+                    </div>
+                    <div class="currencyText">
+                        <h1>USDT Coin</h1>
+                    </div>
+                </div>
+                <div class="currencyTable">
+                    <table class="cT">
+                        <tr>
+                            <td>Total Deposited</td>
+                            <td><span>$</span>1.87M</td>
+                        </tr>
+                        <tr>
+                            <td>Total Borrowed</td>
+                            <td><span>$</span>821.32</td>
+                        </tr>
+                        <tr>
+                            <td>Deposit APY</td>
+                            <td>13.14<span>%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Borrow APY</td>
+                            <td>0<span>%</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="homeFooter">
+            <div class="footerContent">
+                <table class="footerTable">
+                    <tr>
+                        <td>Standard: 0% HAK</td>
+                        <td>LTV: 55%</td>
+                        <td>Borrowing Interest: 9.6%</td>
+                    </tr>
+                    <tr>
+                        <td>Tier 1: 2.5% HAK</td>
+                        <td>LTV: 60%</td>
+                        <td>Borrowing Interest: 4.8%</td>
+                    </tr>
+                    <tr>
+                        <td>Tier 2: 5% HAK</td>
+                        <td>LTV: 65%</td>
+                        <td>Borrowing Interest: 3.24%</td>
+                    </tr>
+                    <tr>
+                        <td>Tier 3: 10% HAK</td>
+                        <td>LTV: 70%</td>
+                        <td>Borrowing Interest: 2.4%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="Js/menu.js"></script>
+</body>
+
+</html>

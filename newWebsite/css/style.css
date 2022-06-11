@@ -1,0 +1,818 @@
+@font-face {
+    font-family: 'aeonik';
+    src: url('../fonts/AeonikTRIAL-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'aeonik';
+}
+
+body {
+    background: #202d3f;
+}
+
+#home {
+    width: 100%;
+}
+
+#home .head {
+    width: 100%;
+}
+
+#navbar {
+    height: 13vh;
+    background: #182538;
+    display: flex;
+    max-width: 100%;
+}
+
+#navbar .desktopNav {
+    display: flex;
+    margin: 0 0 0 200px;
+}
+
+#navbar .navSocial {
+    display: flex;
+}
+
+.navSocial ion-icon {
+    color: #fff;
+}
+
+#navbar .mnc {
+    display: flex;
+}
+
+#navbar .nav-items {
+    width: 40%;
+   /* font-size: 100px; */
+}
+
+.desktopNav {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 0 0 0 20%;
+}
+
+.desktopNav li {
+    list-style: none;
+    margin: 0 0 0 10px;
+    padding: 70px 0 0 0;
+}
+
+.desktopNav li a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 13px;
+    transition: .5s;
+    cursor: pointer;
+    padding: 10px;
+}
+#connect{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 13px;
+    transition: .5s;
+    cursor: pointer;
+    padding: 10px;
+    
+
+}
+#disconnect{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: green;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 13px;
+    /* transition: .5s; */
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 100;
+
+}
+
+
+/****** BOTTOM LINE *******/
+
+#navbar ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    overflow: hidden;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform .5s;
+}
+
+#navbar ul li a:hover:after {
+    transform: scaleX(1);
+    background: #fff;
+    transform-origin: center;
+}
+
+#navbar ul li a:active {
+    transform: scaleX(1);
+}
+
+.navSocial {
+    width: 20%;
+    margin: 0 0 0 20px;
+}
+
+.navSocial .twitter,
+.github,
+.discord {
+    padding: 30px 0 0 20px;
+}
+
+#navbar .mnc {
+    width: 20%;
+    margin: 0 0 0 20px;
+}
+
+.mnc #market {
+    width: 100px;
+    height: 40px;
+    font-size: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 17px 0 0 150px;
+}
+
+.mnc #market option {
+    background: #0d142d;
+}
+
+.mnc .connectBtn {
+    padding: 26px 0 0 150px;
+}
+
+.connectBtn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    margin: 20px 0 0 15px;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 8px #fff;
+}
+
+#navbar .mobileNav {
+    display: none;
+}
+
+.menu-opened {
+    display: none;
+}
+
+
+/* STYLING HOME CONTAINER */
+
+.homeContainer {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+}
+
+.homeContainer .totalVal {
+    width: 100%;
+    height: 18vh;
+    background: linear-gradient(to right, #09F5FF, #7489FD, #F10EFE);
+    margin: 30px 0 0 0;
+}
+
+.homeContainer .totalVal .totalPrice {
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 35px;
+}
+
+.homeContainer .totalVal .totalPrice span {
+    margin: 0 5px 0 0;
+}
+
+.homeContainer .totalVal .priceText {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 1120px) {
+    .desktopSocial {
+        width: 10%;
+        margin: 0 0 0 150px;
+    }
+}
+
+@media only screen and (max-width: 303px) {
+    .homeContainer .totalVal .totalPrice {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .mnc .connectBtn {
+        padding: 26px 0 0 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .walletDetails .backButton {
+        top: 100px !important;
+    }
+    .walletDetails .conn {
+        left: 60% !important;
+        top: 18px !important;
+        padding: 10px 15px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .homeContainer {
+        width: 95%;
+    }
+    .homeFlexContainer {
+        width: 95% !important;
+        display: block !important;
+    }
+    .homeFlexContainer .flexBox {
+        width: 100% !important;
+        margin: 20px 0 0 0;
+        height: 40vh !important;
+    }
+    .homeFlexContainer .flexBox .currency {
+        border-bottom: none !important;
+    }
+    #navbar .desktopNav {
+        display: none;
+    }
+    #navbar .desktopSocial {
+        display: none;
+    }
+    #navbar .mnc {
+        display: none;
+    }
+    #navbar .mobileOpened {
+        display: block !important;
+        transition: 250ms ease-in-out;
+    }
+    #navbar .mobileNav {
+        background: #334764;
+        position: relative;
+        top: 80px;
+        left: 120%;
+        z-index: 2;
+    }
+    .mobileNav li {
+        list-style: none;
+        padding: 20px;
+        text-align: center;
+        transition: 250ms ease-in-out;
+    }
+    .mobileNav li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .mobileNav li:hover {
+        background: rgba(17, 25, 36, 0.5);
+        transition: 250ms ease-in-out;
+    }
+    .menu-closed,
+    .menu-opened {
+        color: #fff;
+        position: absolute;
+        top: 20px;
+        left: 90%;
+        cursor: pointer;
+        transition: 250ms ease-in-out;
+        font-size: 40px;
+    }
+    .homeFooter {
+        width: 95% !important;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .menu-closed,
+    .menu-opened {
+        left: 85%;
+    }
+    #navbar .mobileNav {
+        left: 95%;
+    }
+}
+
+
+/* HOME FLEX CONTAINER */
+
+.homeFlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.homeFlexContainer .flexBox {
+    flex-grow: 1;
+    width: 28%;
+    height: 35vh;
+    background: #111924;
+}
+
+.flexBox .currency {
+    padding: 20px;
+    width: 95%;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff;
+}
+
+.flexBox .currency .icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.flexBox .currency .icon img {
+    width: 100%;
+}
+
+.flexBox .currency .currencyText h1 {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+
+.currencyTable {
+    width: 95%;
+    margin: 10px 0 0 0;
+}
+
+.currencyTable .cT tr td {
+    padding: 8px 0 0 0;
+}
+
+.currencyTable .cT tr td:first-child {
+    padding: 0 0 0 10px;
+}
+
+.currencyTable .cT tr td:last-child {
+    font-weight: bold;
+}
+
+.currencyTable .cT tr td {
+    margin: 10px auto;
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+}
+
+.homeFooter {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.homeFooter .footerContent {
+    padding: 0 0 20px 0;
+}
+
+.homeFooter .footerContent .footerTable {
+    border-spacing: 0 1em;
+    border-collapse: separate;
+    width: 100%;
+}
+
+.footerContent .footerTable tr {
+    background: #111924;
+}
+
+.homeFooter .footerContent .footerTable tr td {
+    max-width: 100%;
+    height: 10vh;
+    color: #fff;
+    padding: 20px;
+}
+
+.homeFooter .footerContent .footerTable tr td:nth-child(2) {
+    text-align: center;
+}
+
+.homeFooter .footerContent .footerTable tr td:nth-child(3) {
+    text-align: right
+}
+
+
+/* STYLING DASHBOARD WALLET */
+
+.homeContainer .wallet {
+    width: 100%;
+    height: 12vh;
+    background: #111924;
+    margin: 30px 0 0 0;
+}
+
+.wallet .walletText {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 100;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.homeContainer .walletDetails {
+    width: 100%;
+    height: 25vh;
+    background: #111924;
+    margin: 20px 0 0 0;
+}
+
+.walletDetails .chevron {
+    color: #fff;
+    position: relative;
+    left: -10px;
+    top: 6px;
+    font-size: 25px;
+}
+
+.walletDetails .backButton {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    margin: 0 0 0 15px;
+    position: relative;
+    top: 15px;
+    transition: 350ms ease-in-out;
+}
+
+.walletDetails .backButton:hover {
+    background: #fff;
+    border: none;
+    color: #000;
+    transition: 350ms ease-in-out;
+}
+
+.walletDetails .backButton:hover>.chevron {
+    color: #000;
+}
+
+.walletDetails h1 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.walletDetails p {
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    margin: 10px 0 0 0;
+}
+
+.walletDetails .conn {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    text-align: center;
+    position: relative;
+    left: 45%;
+    top: 30px;
+    transition: 250ms ease-in-out;
+}
+
+.walletDetails .conn:hover {
+    background: #fff;
+    color: #000;
+    transition: 250ms ease-in-out;
+}
+
+
+/* STYLING DEPOSIT PAGE */
+
+.depositContainer {
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    padding: 80px 0 20px 0;
+}
+
+.depositFlexWrapBox {
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+.provideT {
+    margin: 0 0 0 10px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    border-top: 1px solid #fff;
+}
+
+.provideT tr td {
+    text-align: center;
+    color: #fff;
+    background: #111924;
+    padding: 10px 15px;
+}
+
+.provideT thead tr td {
+    background: transparent;
+}
+
+.provideT tr td .icon .gear {
+    position: absolute;
+    z-index: 1;
+    transform: translateX(-10px);
+    margin: 5px 0 0 0;
+}
+
+.provideT tr td .icon {
+    display: flex;
+}
+
+.provideT tr td .icon span {
+    margin: 15px 0 0 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.provideT tr td .icon p {
+    display: block !important;
+}
+
+.provideT tr td:nth-child(1) {
+    width: 100px;
+    text-align: left !important;
+}
+
+.provideT tr td:nth-child(2) {
+    width: 450px;
+}
+
+.provideT tr td:nth-child(3) {
+    width: 200px;
+}
+
+.provideT tr td:nth-child(4)>button {
+    padding: 7px;
+    margin: 5px 0 0 10px;
+    text-align: center;
+}
+
+
+/* DEPOSIT TABLE */
+
+.depositT {
+    margin: 0 0 0 10px;
+    position: relative;
+    top: 30px;
+    width: 100%;
+}
+
+.depositT .icon {
+    display: flex;
+}
+
+.depositT tr td {
+    color: #fff;
+    text-align: center;
+}
+
+.depositT tr td:nth-child(1) {
+    width: 150px;
+}
+
+.depositT tr td:nth-child(2) {
+    width: 20%;
+}
+
+.depositT tr td:nth-child(3) {
+    width: 120px;
+}
+
+.depositT tr td:nth-child(4) {
+    text-align: center;
+}
+
+.depositT tr td:nth-child(4)>button {
+    padding: 7px;
+    margin: 5px 0 0 0;
+    text-align: center;
+}
+
+.depositT .icon span {
+    transform: translateY(10px);
+    color: #fff;
+    margin: 0 0 0 10px;
+    font-size: 13px;
+}
+
+
+/* BORROW CONTAINER */
+
+.borrTop {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    padding: 80px 0 0 0;
+}
+
+.borrTop .borrT {
+    width: 100%;
+}
+
+.borrT tr td {
+    color: #fff;
+}
+
+.borrT tr td:last-child {
+    text-align: right;
+}
+
+.borrowContainer {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.borrowTop {
+    width: 100%;
+}
+
+.borrowTop .borrowTable {
+    width: 100%;
+}
+
+.borrowTop .borrowTable tr td {
+    color: #fff;
+    text-align: center;
+}
+
+.borrowFlexWrapBox {
+    max-width: 100%;
+}
+
+.borrowT {
+    margin: 0 0 0 10px;
+    position: relative;
+    top: 30px;
+    width: 100%;
+    border-top: 1px solid #fff;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+}
+
+.borrowT .icon {
+    display: flex;
+}
+
+.borrowT tr td {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background: #111924;
+}
+
+.borrowT thead tr td {
+    background: transparent;
+    padding: 0;
+}
+
+.borrowT tr td:first-child {
+    text-align: left;
+}
+
+.borrowT tr td:nth-child(2) {
+    text-align: left;
+}
+
+.borrowT tr td:nth-child(3) {
+    text-align: left;
+}
+
+.borrowT tr td:nth-child(4) {
+    text-align: right;
+}
+
+.borrowT tr td:nth-child(4)>button {
+    padding: 7px;
+    margin: 5px 0 0 0;
+    text-align: center;
+}
+
+.borrowT .icon span {
+    transform: translateY(10px);
+    color: #fff;
+    margin: 0 0 0 10px;
+    font-size: 13px;
+}
+
+
+/* STYLING LEND PAGE */
+
+.lendContainer {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 80px 0 20px 0;
+}
+
+.lendRow {
+    max-width: 100%;
+}
+
+.lendRow thead td {
+    margin: auto;
+    color: #fff;
+    text-align: center;
+}
+
+.lendFlexWrapBox {
+    max-width: 100%;
+}
+
+.lendT {
+    margin: 0 0 0 10px;
+    position: relative;
+    top: 30px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    border-top: 1px solid #fff;
+}
+
+.lendT tr td {
+    text-align: center;
+    color: #fff;
+    background: #111924;
+    padding: 10px 15px;
+}
+
+.lendT thead tr td {
+    background: transparent;
+}
+
+.lendT tr td .icon .gear {
+    position: absolute;
+    z-index: 1;
+    transform: translateX(-10px);
+    margin: 5px 0 0 0;
+}
+
+.lendT tr td .icon {
+    display: flex;
+}
+
+.lendT tr td .icon span {
+    margin: 15px 0 0 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.lendT tr td .icon p {
+    display: block !important;
+}
+
+.lendT tr td:nth-child(1) {
+    width: 150px;
+    text-align: left !important;
+}
+
+.lendT tr td:nth-child(2) {
+    width: 450px;
+}
+
+.lendT tr td:nth-child(3) {
+    width: 200px;
+}
+
+.lendT tr td:nth-child(4)>button {
+    padding: 7px;
+    margin: 5px 0 0 10px;
+    text-align: center;
+}

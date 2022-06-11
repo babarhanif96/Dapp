@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - H</title>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&family=Poppins&family=Roboto&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="Js/menu.js"></script>
+</head>
+
+<body>
+    <section id="home">
+        <header class="head">
+            <nav id="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="Asset/images/logo.png" alt="" width="80" height="80"></a>
+                </div>
+                <div class="nav-items">
+                    <ul class="desktopNav">
+                        <li><a href="index.html">MARKET</a></li>
+                        <li><a href="">MY PAGE</a></li>
+                        <li><a href="lend.html">LEND</a></li>
+                        <li><a href="borrow.html">BORROW</a></li>
+                        <li><a href="deposit.html">DEPOSIT</a></li>
+                    </ul>
+                    <ion-icon onclick="toggleNav()" id="mClosed" class="menu-closed" name="menu-outline"></ion-icon>
+                    <ion-icon onclick="toggleNav()" id="mOpened" class="menu-opened" name="close-outline"></ion-icon>
+                    <ul id="phone" class="mobileNav">
+                        <li><a href="index.html">MARKET</a></li>
+                        <li><a href="">MY PAGE</a></li>
+                        <li><a href="lend.html">LEND</a></li>
+                        <li><a href="borrow.html">BORROW</a></li>
+                        <li><a href="deposit.html">DEPOSIT</a></li>
+                    </ul>
+                </div>
+                <div class="navSocial desktopSocial">
+                    <div class="twitter">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </div>
+                    <div class="github">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                    <div class="discord">
+                        <ion-icon name="logo-discord"></ion-icon>
+                    </div>
+                </div>
+                <div class="mnc">
+                    <div class="connectBtn">
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="homeContainer">
+            <div class="wallet">
+                <h1 class="walletText">Please connect your wallet</h1>
+            </div>
+            <div class="walletDetails">
+                <a href="deposit.html" class="backButton">
+                    <ion-icon class="chevron" name="chevron-back-circle-outline"></ion-icon><span>Back</span>
+                </a>
+                <h1>Please connect your wallet</h1>
+                <p>To see your deposited / borrowed assets, you need to connect your wallet.</p>
+                <a href="" class="conn">Connect</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

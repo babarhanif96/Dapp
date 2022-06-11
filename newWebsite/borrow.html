@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrow - H</title>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&family=Poppins&family=Roboto&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <section id="home">
+        <header class="head">
+            <nav id="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="Asset/images/logo.png" alt="" width="80" height="80"></a>
+                </div>
+                <div class="nav-items">
+                    <ul class="desktopNav">
+                        <li><a href="index.html">MARKET</a></li>
+                        <li><a href="dashboard.html">MY PAGE</a></li>
+                        <li><a href="lend.html">LEND</a></li>
+                        <li><a href="">BORROW</a></li>
+                        <li><a href="deposit.html">DEPOSIT</a></li>
+                    </ul>
+                    <ion-icon onclick="toggleNav()" id="mClosed" class="menu-closed" name="menu-outline"></ion-icon>
+                    <ion-icon onclick="toggleNav()" id="mOpened" class="menu-opened" name="close-outline"></ion-icon>
+                    <ul id="phone" class="mobileNav">
+                        <li><a href="index.html">MARKET</a></li>
+                        <li><a href="dashboard.html">MY PAGE</a></li>
+                        <li><a href="lend.html">LEND</a></li>
+                        <li><a href="">BORROW</a></li>
+                        <li><a href="deposit.html">DEPOSIT</a></li>
+                    </ul>
+                </div>
+                <div class="navSocial desktopSocial">
+                    <div class="twitter">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </div>
+                    <div class="github">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                    <div class="discord">
+                        <ion-icon name="logo-discord"></ion-icon>
+                    </div>
+                </div>
+                <div class="mnc">
+                    <div id="connect"  class="connectBtn">
+                        <a  href="#">Connect</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="borrTop">
+            <table class="borrT">
+                <tr>
+                    <td>Tier Level: Standard</td>
+                    <td>LTV: 55%</td>
+                </tr>
+            </table>
+        </div>
+        <div class="borrowContainer">
+            <div class="borrowTop">
+                <div class="borrowFlexWrapBox">
+                    <table class="borrowT">
+                        <thead>
+                            <td>Borrow</td>
+                            <td>Available to borrow</td>
+                            <td>APY</td>
+                            <td>Borrow/Repay</td>
+                        </thead>
+                        <tr>
+                            <td>
+                                <div class="icon">
+                                    <img src="Asset/images/dai.svg" alt="" width="40" height="40">
+                                    <span>DAI</span>
+                                </div>
+
+                            </td>
+                            <td>—</td>
+                            <td>0%</td>
+                            <td>
+                                <button>Borrow</button><br>
+                                <button disabled>Repay</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="icon">
+                                    <img src="Asset/images/dollar.svg" alt="" width="40" height="40">
+                                    <span>USD Coin</span>
+                                </div>
+
+                            </td>
+                            <td>—</td>
+                            <td>0%</td>
+                            <td>
+                                <button>Borrow</button><br>
+                                <button disabled>Repay</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="icon">
+                                    <img src="Asset/images/usdt.svg" alt="" width="40" height="40">
+                                    <span>USDT</span>
+                                </div>
+
+                            </td>
+                            <td>—</td>
+                            <td>0%</td>
+                            <td>
+                                <button>Borrow</button><br>
+                                <button disabled>Repay</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <script src="Js/menu.js"></script>
+</body>
+
+</html>
